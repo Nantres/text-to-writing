@@ -3,14 +3,14 @@ import sys
 from pynput.mouse import Listener, Controller, Button
 from time import sleep
 
-#text = gui.prompt(text='Text to convert:', title='Input Text')
-text = input('text: ')
+text = gui.prompt(text='Text to convert:', title='Input Text')
+#text = input('text: ')
 
 if text == None or text == '':
     sys.exit()
 def fontsize_prompt():
-    #fontsize = gui.prompt(text='    Font size:\n(no letters, >0)', title='Input Font Size')
-    fontsize = input('font size: ')
+    fontsize = gui.prompt(text='    Font size:\n(no letters, >0)', title='Input Font Size')
+    #fontsize = input('font size: ')
     if fontsize == None:
         sys.exit()
     elif fontsize == '0':
